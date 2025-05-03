@@ -148,13 +148,12 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
             ]          
             reply_markup = InlineKeyboardMarkup(keyboard)
             await update.message.reply_text(  
-                "===================================\n"  
                 "       👋 𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝗧𝗼 𝗦𝗽𝗶𝗱𝗲𝗿𝘁𝗶𝘀𝗲 \n"  
                 "     <b>𝗔𝘂𝘁𝗼 𝗔𝗱 𝗙𝗼𝗿𝘄𝗮𝗿𝗱𝗲𝗿 𝗕𝗼𝘁 🕷️</b>\n"  
-                "---------------------------------------------\n"  
+                "---------------------------------------------\n"
                 " 𝒀𝒐𝒖𝒓 𝒔𝒖𝒃𝒔𝒄𝒓𝒊𝒑𝒕𝒊𝒐𝒏 𝒊𝒔 𝒂𝒄𝒕𝒊𝒗𝒆 𝒖𝒏𝒕𝒊𝒍:\n"  
-                f"       <b>{formatted_expiry}</b> 📅\n"  
-                "===================================",  
+                f"       <b>{formatted_expiry}</b> 📅\n"
+                "."‚
                 reply_markup=reply_markup,  
                 parse_mode="HTML"              )  
         else:
