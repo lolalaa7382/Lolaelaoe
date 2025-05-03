@@ -139,11 +139,11 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         if time_left >= 0:
             keyboard = [
                 [InlineKeyboardButton("𝗛𝗲𝗹𝗽 𝗚𝘂𝗶𝗱𝗲", callback_data='help')],
-                [InlineKeyboardButton("𝗔𝗨𝗧𝗢 𝗥𝗘𝗦𝗣𝗢𝗡𝗗𝗘𝗥 𝗚𝗨𝗜𝗗𝗘❕", url='https://graph.org/vTelegraphBot-05-03-21')],
+                [InlineKeyboardButton("𝗔𝘂𝘁𝗼 𝗥𝗲𝘀𝗽𝗼𝗻𝗱𝗲𝗿 𝗚𝘂𝗶𝗱𝗲 🕸️", url='https://graph.org/vTelegraphBot-05-03-21')],
                 [InlineKeyboardButton("𝗔𝗽𝗶 𝗔𝗻𝗱 𝗛𝗮𝘀𝗵 𝗜𝗱 ❗", url='https://t.me/aboutAdss/5')],
                 [InlineKeyboardButton("𝗟𝗼𝗴𝗶𝗻 𝗪𝗶𝘁𝗵 𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺 🔗", callback_data='login')],
                 [InlineKeyboardButton("𝗦𝗲𝘁𝘁𝗶𝗻𝗴𝘀 ⚙️", callback_data='settings')],
-                [InlineKeyboardButton("𝗔𝘂𝘁𝗼 𝗥𝗲𝗽𝗹𝘆 + 𝙰𝙽𝚃𝙸 𝚅𝙸𝙴𝚆 𝙾𝙽𝙲𝙴 ⚙️⚙️", callback_data='auto_reply')],
+                [InlineKeyboardButton("𝗔𝘂𝘁𝗼 𝗥𝗲𝗽𝗹𝘆 + 𝗔𝗻𝘁𝗶 𝗩𝗶𝗲𝘄 𝗢𝗻𝗰𝗲", callback_data='auto_reply')],
                 [InlineKeyboardButton("𝗦𝘁𝗮𝘁𝘀 📈", callback_data='refresh_stats')],
             ]          
             reply_markup = InlineKeyboardMarkup(keyboard)
@@ -1717,22 +1717,22 @@ async def my_groups(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 async def main_menu(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     keyboard = [
                 [InlineKeyboardButton("𝗛𝗲𝗹𝗽 𝗚𝘂𝗶𝗱𝗲", callback_data='help')],
-                [InlineKeyboardButton("𝗔𝗨𝗧𝗢 𝗥𝗘𝗦𝗣𝗢𝗡𝗗𝗘𝗥 𝗚𝗨𝗜𝗗𝗘❕", url='https://graph.org/vTelegraphBot-05-03-21')],
+                [InlineKeyboardButton("𝗔𝘂𝘁𝗼 𝗥𝗲𝘀𝗽𝗼𝗻𝗱𝗲𝗿 𝗚𝘂𝗶𝗱𝗲 🕸️", url='https://graph.org/vTelegraphBot-05-03-21')],
                 [InlineKeyboardButton("𝗔𝗽𝗶 𝗔𝗻𝗱 𝗛𝗮𝘀𝗵 𝗜𝗱 ❗", url='https://t.me/aboutAdss/5')],
                 [InlineKeyboardButton("𝗟𝗼𝗴𝗶𝗻 𝗪𝗶𝘁𝗵 𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺 🔗", callback_data='login')],
                 [InlineKeyboardButton("𝗦𝗲𝘁𝘁𝗶𝗻𝗴𝘀 ⚙️", callback_data='settings')],
-                [InlineKeyboardButton("𝗔𝘂𝘁𝗼 𝗥𝗲𝗽𝗹𝘆 + 𝙰𝙽𝚃𝙸 𝚅𝙸𝙴𝚆 𝙾𝙽𝙲𝙴 ⚙️", callback_data='auto_reply')],
+                [InlineKeyboardButton("𝗔𝘂𝘁𝗼 𝗥𝗲𝗽𝗹𝘆 + 𝗔𝗻𝘁𝗶 𝗩𝗶𝗲𝘄 𝗢𝗻𝗰𝗲", callback_data='auto_reply')],
                 [InlineKeyboardButton("𝗦𝘁𝗮𝘁𝘀 📈", callback_data='refresh_stats')],
             ]  
     reply_markup = InlineKeyboardMarkup(keyboard)
 
     if update.message:
 
-        await update.message.reply_text("DEVSCOTT Main Menu", reply_markup=reply_markup)
+        await update.message.reply_text("Autoforwarder Main Menu", reply_markup=reply_markup)
     elif update.callback_query:
 
         query = update.callback_query
-        await query.edit_message_text("DEVSCOTT Main Menu", reply_markup=reply_markup)
+        await query.edit_message_text("Autoforwarder Main Menu", reply_markup=reply_markup)
 
 async def back_to_menu(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     query = update.callback_query
