@@ -3,15 +3,13 @@ from telegram.ext import ContextTypes, CommandHandler, CallbackQueryHandler
 import os
 
 # Admin username for contact button
-ADMIN_USERNAME = os.getenv("ADMIN_USERNAME", "echoFluxxx")
+ADMIN_USERNAME = os.getenv("ADMIN_USERNAME", "SpidertiseSup")
 
 # Crypto payment options with placeholder addresses
 CRYPTO_PAYMENTS = {
-    "USDT (BEP20)": "0x792634EC84658D29A3Dd4cC1A5388dbdB8466765",
-    "USDT (POL)": "0x106107F682D7CbD6B2eeb7c2B257df3C8020dbd6",
-    "ETH": "0x792634EC84658D29A3Dd4cC1A5388dbdB8466765",
-    "Solana": "EsjgHjpKap3GS2FZ2yNVfasnioqd2jvFbuYpsLfsrY1o",
-    "TON": "UQBbbNgj8jF3y_A7jLUUR3pIFbsjj2KKeE9WjLGtZSvpdz3i"
+    "USDT (BEP20)": "0x20d10c9ac54438631ba1158366edb1b7f1404e71",
+    "LTC": "LS5GtcCV7mLGYHVMfYrvbhbEH8HUyQBetC",
+    "BTC (BEP20)": "0x20d10c9ac54438631ba1158366edb1b7f1404e71",
 }
 
 async def show_payment_options(update, context: ContextTypes.DEFAULT_TYPE):
