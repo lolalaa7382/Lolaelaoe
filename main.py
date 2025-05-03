@@ -28,7 +28,7 @@ load_dotenv()
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 scheduler = AsyncIOScheduler()
 ADMIN_IDS = os.getenv("ADMIN_IDS").split(',') 
-ADMIN_USERNAME = os.getenv("ADMIN_USERNAME", "echoFluxxx")
+ADMIN_USERNAME = os.getenv("ADMIN_USERNAME", "SpidertiseSup")
 session_lock = asyncio.Lock()
 
 def load_config():
@@ -138,19 +138,19 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
         if time_left >= 0:
             keyboard = [
-                [InlineKeyboardButton("𝗛𝗘𝗟𝗣 𝗚𝗨𝗜𝗗𝗘 ❕", callback_data='help')],
-                [InlineKeyboardButton("𝗔𝗨𝗧𝗢 𝗥𝗘𝗦𝗣𝗢𝗡𝗗𝗘𝗥 𝗚𝗨𝗜𝗗𝗘❕", url='https://telegra.ph/AUTO-RESPONDER-GUIDE-11-11')],
-                [InlineKeyboardButton("𝗔𝗣𝗜 𝗔𝗡𝗗 𝗛𝗔𝗦𝗛 𝗜𝗗 🎥", url='https://youtu.be/8naENmP3rg4?si=LVxsTXSSI864t6Kv')],
-                [InlineKeyboardButton("𝗟𝗢𝗚𝗜𝗡 𝗪𝗜𝗧𝗛 𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠 🔑", callback_data='login')],
+                [InlineKeyboardButton("𝗛𝗲𝗹𝗽 𝗚𝘂𝗶𝗱𝗲", callback_data='help')],
+                [InlineKeyboardButton("𝗔𝗨𝗧𝗢 𝗥𝗘𝗦𝗣𝗢𝗡𝗗𝗘𝗥 𝗚𝗨𝗜𝗗𝗘❕", url='https://graph.org/vTelegraphBot-05-03-21')],
+                [InlineKeyboardButton("𝗔𝗽𝗶 𝗔𝗻𝗱 𝗛𝗮𝘀𝗵 𝗜𝗱 ❗", url='https://t.me/aboutAdss/5')],
+                [InlineKeyboardButton("𝗟𝗼𝗴𝗶𝗻 𝗪𝗶𝘁𝗵 𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺 🔗", callback_data='login')],
                 [InlineKeyboardButton("𝗦𝗲𝘁𝘁𝗶𝗻𝗴𝘀 ⚙️", callback_data='settings')],
                 [InlineKeyboardButton("𝗔𝘂𝘁𝗼 𝗥𝗲𝗽𝗹𝘆 + 𝙰𝙽𝚃𝙸 𝚅𝙸𝙴𝚆 𝙾𝙽𝙲𝙴 ⚙️⚙️", callback_data='auto_reply')],
-                [InlineKeyboardButton("𝗦𝘁𝒂𝘁𝘀 📈", callback_data='refresh_stats')],
+                [InlineKeyboardButton("𝗦𝘁𝗮𝘁𝘀 📈", callback_data='refresh_stats')],
             ]          
             reply_markup = InlineKeyboardMarkup(keyboard)
             await update.message.reply_text(  
                 "===================================\n"  
-                "       👋 𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐭𝐨\n"  
-                "     <b>𝔻𝔼𝕍𝕊ℂ𝕆𝕋𝕋 𝔸𝕌𝕋𝕆 𝔽𝕆ℝ𝕎𝔸ℝ𝔻𝔼ℝ 𝔹𝕠𝕥</b>\n"  
+                "       👋 𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝗧𝗼 𝗦𝗽𝗶𝗱𝗲𝗿𝘁𝗶𝘀𝗲 \n"  
+                "     <b>𝗔𝘂𝘁𝗼 𝗔𝗱 𝗙𝗼𝗿𝘄𝗮𝗿𝗱𝗲𝗿 𝗕𝗼𝘁 🕷️</b>\n"  
                 "---------------------------------------------\n"  
                 " 𝒀𝒐𝒖𝒓 𝒔𝒖𝒃𝒔𝒄𝒓𝒊𝒑𝒕𝒊𝒐𝒏 𝒊𝒔 𝒂𝒄𝒕𝒊𝒗𝒆 𝒖𝒏𝒕𝒊𝒍:\n"  
                 f"       <b>{formatted_expiry}</b> 📅\n"  
@@ -1716,13 +1716,13 @@ async def my_groups(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         await message.reply_text(message_text, reply_markup=reply_markup, parse_mode="Markdown")
 async def main_menu(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     keyboard = [
-                [InlineKeyboardButton("𝗛𝗘𝗟𝗣 𝗚𝗨𝗜𝗗𝗘 ❕", callback_data='help')],
-                [InlineKeyboardButton("𝗔𝗨𝗧𝗢 𝗥𝗘𝗦𝗣𝗢𝗡𝗗𝗘𝗥 𝗚𝗨𝗜𝗗𝗘❕", url='https://telegra.ph/AUTO-RESPONDER-GUIDE-11-11')],
-                [InlineKeyboardButton("𝗔𝗣𝗜 𝗔𝗡𝗗 𝗛𝗔𝗦𝗛 𝗜𝗗 🎥", url='https://youtu.be/8naENmP3rg4?si=LVxsTXSSI864t6Kv')],
-                [InlineKeyboardButton("𝗟𝗢𝗚𝗜𝗡 𝗪𝗜𝗧𝗛 𝗧𝗘𝗟𝗘𝗚𝗥𝗔𝗠 🔑", callback_data='login')],
+                [InlineKeyboardButton("𝗛𝗲𝗹𝗽 𝗚𝘂𝗶𝗱𝗲", callback_data='help')],
+                [InlineKeyboardButton("𝗔𝗨𝗧𝗢 𝗥𝗘𝗦𝗣𝗢𝗡𝗗𝗘𝗥 𝗚𝗨𝗜𝗗𝗘❕", url='https://graph.org/vTelegraphBot-05-03-21')],
+                [InlineKeyboardButton("𝗔𝗽𝗶 𝗔𝗻𝗱 𝗛𝗮𝘀𝗵 𝗜𝗱 ❗", url='https://t.me/aboutAdss/5')],
+                [InlineKeyboardButton("𝗟𝗼𝗴𝗶𝗻 𝗪𝗶𝘁𝗵 𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺 🔗", callback_data='login')],
                 [InlineKeyboardButton("𝗦𝗲𝘁𝘁𝗶𝗻𝗴𝘀 ⚙️", callback_data='settings')],
                 [InlineKeyboardButton("𝗔𝘂𝘁𝗼 𝗥𝗲𝗽𝗹𝘆 + 𝙰𝙽𝚃𝙸 𝚅𝙸𝙴𝚆 𝙾𝙽𝙲𝙴 ⚙️", callback_data='auto_reply')],
-                [InlineKeyboardButton("𝗦𝘁𝒂𝘁𝘀 📈", callback_data='refresh_stats')],
+                [InlineKeyboardButton("𝗦𝘁𝗮𝘁𝘀 📈", callback_data='refresh_stats')],
             ]  
     reply_markup = InlineKeyboardMarkup(keyboard)
 
@@ -2110,8 +2110,8 @@ async def all_callback(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
 
     elif query.data == 'help':
         help_text = (
-        "🤖 <b>DEVSCOTT AUTO FORWARDING Bot Help</b>\n\n"
-        "Welcome to the DEVSCOTT AUTO FORWARDING Bot! Here's a guide on how to use the available commands:\n\n"
+        "🤖 <b>AUTO AD FORWARDING Bot Help</b>\n\n"
+        "Welcome to the AUTO AD FORWARDING Bot! Here's a guide on how to use the available commands:\n\n"
 
         "1. <code>/start</code> - Initiates the bot and provides subscription information.\n"
         "   - Displays your current subscription status and expiration date, along with quick links to login and settings.\n\n"
