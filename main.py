@@ -1920,22 +1920,22 @@ async def autoreply_callback(update: Update, context: ContextTypes.DEFAULT_TYPE)
     save_location = user_data.get("save_location", "chat")
 
     keyboard = [
-        [InlineKeyboardButton("━━━━⊱𝙼𝙰𝚃𝙲𝙷 𝙾𝙿𝚃𝙸𝙾𝙽𝚂⊰━━━", callback_data="pass")],
-        [InlineKeyboardButton(f"𝙴𝚡𝚊𝚌𝚝 𝙼𝚊𝚝𝚌𝚑 {'✅' if match_option == 'exact' else '❌'}", callback_data='set_exact')],
-        [InlineKeyboardButton(f"𝙿𝚊𝚛𝚝𝚒𝚊𝚕 𝙼𝚊𝚝𝚌𝚑 {'✅' if match_option == 'partial' else '❌'}", callback_data='set_partial')],
-        [InlineKeyboardButton(f"𝙲𝚊𝚜𝚎 𝙸𝚗𝚜𝚎𝚗𝚜𝚒𝚝𝚒𝚟𝚎 {'✅' if match_option == 'case_insensitive' else '❌'}", callback_data='set_case_insensitive')],
-        [InlineKeyboardButton("━━━━⊱𝚁𝙴𝚂𝙿𝙾𝙽𝚂𝙴 𝚂𝙴𝚃𝚃𝙸𝙽𝙶𝚂⊰━━━", callback_data="pass")],
-        [InlineKeyboardButton(f"𝙿𝙼 {'✅' if responder_option == 'PM' else '❌'}", callback_data='set_pm'),
-        InlineKeyboardButton(f"𝙶𝙲 {'✅' if responder_option == 'GC' else '❌'}", callback_data='set_gc'),
-        InlineKeyboardButton(f"𝙰𝚕𝚕 {'✅' if responder_option == 'All' else '❌'}", callback_data='set_all')],
-        [InlineKeyboardButton("━━━━⊱𝙰𝙽𝚃𝙸 𝚅𝙸𝙴𝚆 𝙾𝙽𝙲𝙴 𝚂𝙰𝚅𝙴 𝙻𝙾𝙲𝙰𝚃𝙸𝙾𝙽⊰━━━", callback_data="pass")],
-        [InlineKeyboardButton(f"𝚂𝚊𝚟𝚎𝚍 𝙼𝚎𝚜𝚜𝚊𝚐𝚎𝚜 {'✅' if save_location == 'saved' else '❌'}", callback_data='set_saved'),
-        InlineKeyboardButton(f"𝙸𝚗-𝙲𝚑𝚊𝚝 {'✅' if save_location == 'chat' else '❌'}", callback_data='set_chat')],
-        [InlineKeyboardButton("━━━━⊱𝙶𝚁𝙾𝚄𝙿 𝚃𝙰𝙶𝙶𝙸𝙽𝙶⊰━━━", callback_data="pass")],
-        [InlineKeyboardButton("📢 𝙷𝚘𝚠 𝚃𝚘 𝚃𝚊𝚐 𝙰𝚕𝚕", callback_data='how_to_tag')],
-        [InlineKeyboardButton(f"{auto_reply_text}", callback_data='toggle_auto_reply')],
-        [InlineKeyboardButton("📝 𝙼𝚢 𝙺𝚎𝚢𝚠𝚘𝚛𝚍𝚜", callback_data='words')],
-        [InlineKeyboardButton("🔙 𝙱𝚊𝚌𝚔", callback_data='back')]
+        [InlineKeyboardButton("𝗠𝗮𝘁𝗰𝗵 𝗦𝗲𝘁𝘁𝗶𝗻𝗴 🕸️", callback_data="pass")],
+        [InlineKeyboardButton(f"ᴇxᴀᴄᴛ ᴍᴀᴛᴄʜ {'✅' if match_option == 'exact' else '❌'}", callback_data='set_exact')],
+        [InlineKeyboardButton(f"ᴘᴀʀᴛɪᴀʟ ᴍᴀᴛᴄʜ {'✅' if match_option == 'partial' else '❌'}", callback_data='set_partial')],
+        [InlineKeyboardButton(f"ᴄᴀsᴇ ɪɴsᴇɴsɪᴛɪᴠᴇ {'✅' if match_option == 'case_insensitive' else '❌'}", callback_data='set_case_insensitive')],
+        [InlineKeyboardButton("𝗥𝗲𝘀𝗽𝗼𝗻𝘀𝗲 𝗦𝗲𝘁𝘁𝗶𝗻𝗴 🕷️", callback_data="pass")],
+        [InlineKeyboardButton(f"ᴘᴍ {'✅' if responder_option == 'PM' else '❌'}", callback_data='set_pm'),
+        InlineKeyboardButton(f"ɢᴄ {'✅' if responder_option == 'GC' else '❌'}", callback_data='set_gc'),
+        InlineKeyboardButton(f"ᴀʟʟ {'✅' if responder_option == 'All' else '❌'}", callback_data='set_all')],
+        [InlineKeyboardButton("𝗔𝗻𝘁𝗶 𝗩𝗶𝗲𝘄 𝗢𝗻𝗰𝗲 + 𝗦𝗮𝘃𝗲 𝗟𝗼𝗰𝗮𝘁𝗶𝗼𝗻 ❗", callback_data="pass")],
+        [InlineKeyboardButton(f"sᴀᴠᴇᴅ ᴍᴇssᴀɢᴇs {'✅' if save_location == 'saved' else '❌'}", callback_data='set_saved'),
+        InlineKeyboardButton(f"ɪɴ ᴄʜᴀᴛ {'✅' if save_location == 'chat' else '❌'}", callback_data='set_chat')],
+        [InlineKeyboardButton("𝗚𝗿𝗼𝘂𝗽 𝗧𝗮𝗴𝗴𝗶𝗻𝗴  📎", callback_data="pass")],
+        [InlineKeyboardButton("ʜᴏᴡ ᴛᴏ ᴛᴀɢ ᴀʟʟ", callback_data='how_to_tag')],
+        [InlineKeyboardButton(f"ᴇɴᴀʙʟᴇ {auto_reply_text}", callback_data='toggle_auto_reply')],
+        [InlineKeyboardButton("ᴍʏ ᴋᴇʏᴡᴏʀᴅs 📃", callback_data='words')],
+        [InlineKeyboardButton("ʙᴀᴄᴋ 🔙", callback_data='back')]
     ]
 
 
